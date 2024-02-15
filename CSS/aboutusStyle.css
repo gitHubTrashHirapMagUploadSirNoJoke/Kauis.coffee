@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap');
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.458);
+    top: 0;
+    left: 0;
+    width: 112.7em;
+    height: 450px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    overflow: hidden;
+    padding: 200px 50px;
+}
+.hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 10rem;
+    color: #B07018;
+    transition: color 2s;
+}
+.hero h1:hover{
+    color: #fff;
+}
+.videobg{
+    position: absolute;
+    z-index: -1;
+    top:20;
+    left: 300;
+    min-width: 100%;
+    min-height: 100%;
+}
+.navigation{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 1em;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+    position: relative;
+}
+ul li a:before{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #B07018;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition:.5s;
+}
+ul li:hover a:before{
+    width:50%;
+    transform: translateX(100%);
+}
+.marquee-container{
+    position: absolute;
+    background-color: #B07018;
+    left: 0;
+    top: 53em;
+    width: 100%;
+    height: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.marquee-text{
+    display: inline-block;
+    letter-spacing: 20px;
+    font-size: 40px;
+    font-family: 'Zilla Slab', serif;
+    color: #fff;
+    animation: marqueeAnimation 8s linear infinite;
+}
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.aboutUs{
+    height: 100vh;
+}
+.WHITE{
+    position: absolute;
+    top: 58em;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.coffeeBean {
+    position: absolute;
+    top: 55em;
+    width: 600px;
+    height: auto;
+    left: -13%;
+}
+.aboutUs h1{
+    position:absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 85px;
+    left: 2.6em;
+    top:12em;
+    color: rgb(46, 19, 0);
+}
+.aboutUs p{
+    position: absolute;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    left: 235px;
+    top: 65em;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: rgb(46, 19, 0);
+}
+.rectangle4{
+    position: absolute;
+    right: 0%;
+    top: 60em;
+    width: 1000px;
+    height: 1050px;
+    background-color: rgb(46, 19, 0) ;
+}
+.picAbout{
+    position: absolute;
+    right: 620px;
+    top: 65em;
+    width: 470px;
+    height: 700px;
+    object-fit: cover;
+}
+.picAbout2{
+    position: absolute;
+    right: 40px;
+    top: 70em;
+    width: 470px;
+    height: 700px;
+    object-fit: cover;
+}
+.message{
+    position: absolute;
+    left: 10em;
+    top: 73em;
+    color: #B07018;
+}
+.message:hover{
+    color: rgb(46, 19, 0);
+    transition: .5s;
+}
+.branches{
+    position: absolute;
+    left: 10em;
+    top: 71em;
+    color:#B07018;
+}
+.branches:hover{
+    color: rgb(46, 19, 0);
+    transition: .5s;
+}
+.picAbout,
+.picAbout2 {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Define hover effect for picAbout */
+.picAbout:hover {
+    transform: scale(1.1); /* Scale the image up by 10% on hover */
+}
+
+/* Define hover effect for picAbout2 */
+.picAbout2:hover {
+    transform: scale(1.1); /* Scale the image up by 10% on hover */
+}

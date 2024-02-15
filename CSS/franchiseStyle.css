@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@700;900&display=swap');
+*{
+    border: solid px red;
+}
+.franchise{
+    height: auto;
+}
+.pic1{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 600px;
+    height: 965px;
+    object-fit: cover;
+}
+.pic2{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 600px;
+    height: 965px;
+    object-fit: cover;
+}
+.rectangle2{
+    position: absolute;
+    top: 0;
+    right: 600px;
+    width: 720px;
+    height: 965px;
+    background-color: #ffffff;
+}
+.rectangle3{
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+    width: 120rem;
+    height: 965px;
+}
+.KauiText{
+    display: flex;
+    justify-content: center;
+    color: #55343E;
+    font-size: 60px;
+    font-family: 'Londrina Outline', sans-serif;
+    margin-bottom: 10px;
+}
+.subtext{
+    display: flex;
+    justify-content: center;
+    color: #55343E;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: italic;
+}
+form{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+}
+input{
+    min-width: 50em;
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.submit-button{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 20%;
+}
+textarea{
+    min-width: 50em;
+    resize: none;
+    border-radius: 4px;
+    
+}
+.submit-button{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BB9679;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit-button:hover{
+    color: #BB9679;
+    background-color: white;
+}
